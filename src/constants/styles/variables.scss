@@ -1,0 +1,163 @@
+@import "@fontsource/catamaran";
+$graphite: #3d3f3f;
+$mint: #0a9995;
+$blur_mint: #0a999488;
+$white: white;
+$light_grey: #949494;
+$black: black;
+$background: rgba(0, 0, 0, 0.8);
+$title_background: rgb(219, 218, 218);
+$gradient: linear-gradient(to top, rgb(206, 206, 206) 20%, rgb(213, 213, 213) 30%, rgb(215, 215, 215) 50%, rgb(213, 213, 213) 70%, rgb(206, 206, 208) 80%);
+$font: "Catamaran", sans-serif;
+$size_h2: 3.8vw;
+$size_h3: 20px;
+$weight_h2: 800;
+$weight_h3: 600;
+$size_numbers: 25px;
+$margin_numbers_right: 8px;
+$margin_numbers_top: 3px;
+
+%style_numbers {
+    color: $mint;
+    font-size: 25px;
+    margin-right: 8px;
+    margin-top: 3px;
+}
+
+%big_description {
+    font-family: $font;
+    font-weight: 400;
+    font-size: 1.4vw;
+
+    @media only screen and (max-width: 960px) {
+        font-size: 16px;
+    }
+
+    p {
+        line-height: 1.5vw;
+
+        @media only screen and (max-width: 960px) {
+            line-height: 20px;
+        }
+    }
+}
+
+%size_select{
+    width: 28vw;
+    
+    @media only screen and (max-width: 560px) {
+        width: 35vw;
+    }
+    @media only screen and (max-width: 380px) {
+        width: 40vw;
+    }
+    @media only screen and (max-width: 330px) {
+        width: 50vw;
+    }
+}
+
+%small_description {
+    font-family: $font;
+    font-weight: 400;
+    font-size: 1.1vw;
+
+    @media only screen and (max-width: 960px) {
+        font-size: 14px;
+    }
+
+    @media only screen and (max-width: 460px) {
+        font-size: 12px;
+    }
+
+    p {
+        line-height: 1.3vw;
+
+        @media only screen and (max-width: 960px) {
+            line-height: 20px;
+        }
+
+        @media only screen and (max-width: 460px) {
+            line-height: 18px;
+        }
+    }
+}
+
+%h1_style {
+    font-family: "Catamaran", sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    color: $white;
+    margin-bottom: 12px;
+
+    @media only screen and (max-width: 1200px) {
+        font-size: 7.9vw;
+    }
+
+    @media only screen and (max-width: 560px) {
+        font-size: 7.7vw;
+        margin-bottom: 8px;
+    }
+   
+    @media only screen and (max-width: 380px) {
+        font-size: 7.7vw;
+    }
+}
+
+%h2_style {
+    font-size: $size_h2;
+    color: $mint;
+    font-family: $font;
+    font-weight: $weight_h2;
+    margin-bottom: 100px;
+
+    @media only screen and (max-width: 960px) {
+        margin-bottom: 30px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 28px;
+    }
+
+    @media only screen and (max-width: 560px) {
+        margin-bottom: 23px;
+    }
+}
+
+%h3_style {
+    font-size: $size_h3;
+    font-family: $font;
+    font-weight: $weight_h3;
+    margin-bottom: 30px;
+    line-height: 25px;
+
+    @media only screen and (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+
+    @media only screen and (max-width: 560px) {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    @media only screen and (max-width: 360px) {
+        line-height: 20px;
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
+}
+
+%sсreenplay {
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+}
+
+@mixin page($position) {
+    transform: translate($position, 0);
+    -webkit-transform: translate($position, 0);
+    -moz-transform: translate($position, 0);
+    -ms-transform: translate($position, 0);
+    -o-transform: translate($position, 0);
+}
